@@ -43,7 +43,7 @@ public class VeriffPluginPlugin extends Plugin {
         if (!config.isNull("themeColor")) {
             // Change the default theme color if it is not null
             String themeColor = config.getString("themeColor");
-            branding.themeColor(Color.parseColor(themeColor));
+            branding.primary(Color.parseColor(themeColor));
         }
 
         Configuration configuration = new Configuration.Builder().branding(branding.build()).build();
